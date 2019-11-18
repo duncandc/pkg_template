@@ -1,2 +1,2 @@
 # pkg_template
-Minimal template for creating python packages
+Dummy readme for pkg_template package
