@@ -11,8 +11,8 @@ setup(
     author="Andrew Hearin",
     author_email="ahearin@anl.gov",
     description="Some package",
-    long_description="Some package, yo",
+    long_description="Just some package",
     install_requires=["numpy"],
     packages=find_packages(),
-    url="https://github.com/path/to/pkg/repo"
+    url="https://github.com/aphearin/pkg_template"
 )
