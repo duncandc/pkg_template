@@ -23,7 +23,10 @@ if __name__ == "__main__":
     rootdir = args.rootdir
     root_dirname_pkg = os.path.join(rootdir, pkgname)
 
-    os.makedirs(root_dirname_pkg)
+    try:
+        os.makedirs(root_dirname_pkg)
+    except FileExistsError:
+        raise FileExistsError("{0} already exists".format(root_dirname_pkg))
 
     cmd = "cp pkg_template/LICENSE {0}".format(root_dirname_pkg)
     __ = subprocess.check_output(cmd, shell=True)
