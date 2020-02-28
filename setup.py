@@ -8,11 +8,11 @@ VERSION = "0.0.dev"
 setup(
     name=PACKAGENAME,
     version=VERSION,
-    author="Andrew Hearin",
-    author_email="ahearin@anl.gov",
+    author="Duncan Campbell",
+    author_email="duncanc@andrew.cmu.edu",
     description="Some package",
     long_description="Just some package",
     install_requires=["numpy"],
     packages=find_packages(),
-    url="https://github.com/aphearin/pkg_template"
+    url="https://github.com/duncanc/pkg_template"
 )
